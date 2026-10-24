@@ -2,7 +2,7 @@
 number: 10
 title: Gate deployment on readiness and degrade unavailable capabilities explicitly
 date: 2026-10-24
-status: proposed
+status: accepted
 tags:
 - reliability
 - readiness
@@ -21,7 +21,7 @@ Date: 2026-10-24
 
 ## Status
 
-Proposed
+Accepted
 
 ## Context
 

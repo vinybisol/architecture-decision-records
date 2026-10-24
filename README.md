@@ -13,32 +13,19 @@ Este repositório reúne decisões arquiteturais e técnicas para consulta por p
 | [0005](0005-use-repositories-and-unit-of-work-for-persistence.md) | Aceita | Separa os contratos de persistência em Application e coordena gravações com Unit of Work. |
 | [0006](0006-apply-database-migrations-in-cd-not-at-application-startup.md) | Aceita | Executa migrações de banco de dados em CD, não durante a inicialização da aplicação. |
 | [0007](0007-use-an-injectable-clock-and-explicit-business-time-zones.md) | Aceita | Usa uma fonte de tempo substituível e fusos explícitos para regras de negócio testáveis. |
-| [0008](0008-test-with-nunit-nsubstitute-and-microsoft-testing-platform.md) | Proposta | Propõe ferramentas e práticas de testes para projetos .NET, incluindo testes unitários e de integração. |
+| [0008](0008-test-with-nunit-nsubstitute-and-microsoft-testing-platform.md) | Aceita | Define ferramentas e práticas de testes para projetos .NET, incluindo testes unitários e de integração. |
 | [0009](0009-return-successful-collection-responses-as-http-200.md) | Aceita | Retorna `200 OK` e uma coleção JSON, inclusive vazia, em consultas bem-sucedidas. |
-| [0010](0010-gate-deployment-on-readiness-and-degrade-unavailable-capabilities-explicitly.md) | Proposta | Propõe gates de readiness para implantação e degradação explícita de capacidades indisponíveis. |
-
-## Escopo
-
-As decisões são independentes de tecnologia quando indicado no próprio documento. A ADR 8 é específica para .NET e ainda está **Proposta**; suas ferramentas e práticas não devem ser interpretadas como decisões já aceitas.
+| [0010](0010-gate-deployment-on-readiness-and-degrade-unavailable-capabilities-explicitly.md) | Aceita | Bloqueia implantações sem readiness crítica e explicita a degradação de capacidades indisponíveis. |
+| [0011](0011-establish-a-consistent-process-for-creating-and-maintaining-adrs.md) | Aceita | Define como criar, relacionar e manter ADRs, priorizando ADRS via MCP, com CLI como último recurso, conferência de status e validação final com doctor. |
 
 ## Ferramentas e créditos
 
 - **[adrs](https://github.com/joshrotenberg/adrs)** — ferramenta CLI e servidor MCP usados para criar, consultar, validar e relacionar ADRs. Criada por [Josh Rotenberg](https://github.com/joshrotenberg).
 - **[Architectural Decision Records](https://adr.github.io/)** — iniciativa e recursos comunitários que orientam este formato de registro.
 
-A ADR 8 propõe as ferramentas abaixo para testes .NET. Os créditos apontam para os projetos ou organizações mantenedoras; confira a ADR para o contexto e o status da decisão.
+## Instruções para agentes
 
-| Ferramenta | Crédito / projeto |
-| --- | --- |
-| NUnit e NUnit.Analyzers | [NUnit project](https://github.com/nunit) |
-| NSubstitute | [NSubstitute project](https://github.com/nsubstitute/NSubstitute) |
-| Microsoft.Testing.Platform | [Microsoft](https://github.com/microsoft/testfx) |
-| Microsoft.Testing.Extensions.CodeCoverage | [Microsoft](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) |
-| Bogus | [Brian Chavez](https://github.com/bchavez/Bogus) |
-| WebApplicationFactory | [ASP.NET Core / Microsoft](https://github.com/dotnet/aspnetcore) |
-| PostgreSQL | [PostgreSQL Global Development Group](https://www.postgresql.org/about/) |
-| Respawn | [Jimmy Bogard](https://github.com/jbogard/Respawn) |
-| Docker | [Docker](https://www.docker.com/) |
+As regras de trabalho neste repositório estão em [docs/AGENTS.md](docs/AGENTS.md).
 
 ## Contribuições
 

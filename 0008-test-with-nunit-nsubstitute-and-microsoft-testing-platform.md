@@ -2,7 +2,7 @@
 number: 8
 title: Test with NUnit, NSubstitute and Microsoft.Testing.Platform
 date: 2026-10-22
-status: proposed
+status: accepted
 tags:
 - dotnet
 - testing
@@ -17,7 +17,7 @@ Date: 2026-10-22
 
 ## Status
 
-Proposed
+Accepted
 
 ## Context
 
