@@ -13,6 +13,10 @@ links:
   kind: relatesto
 - target: 6
   kind: relatesto
+- target: 17
+  kind: relatesto
+- target: 19
+  kind: relatesto
 ---
 
 # 10. Gate deployment on readiness and degrade unavailable capabilities explicitly
