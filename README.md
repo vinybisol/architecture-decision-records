@@ -25,6 +25,7 @@ Este repositório reúne decisões arquiteturais e técnicas para consulta por p
 | [0017](0017-trigger-releases-from-version-tags-and-build-each-release-artifact-once.md) | Aceita | Dispara releases pelo push da tag de versão, constrói o artefato uma única vez e o promove entre ambientes, publicando as notas a partir do changelog. |
 | [0018](0018-build-disposable-pre-release-versions-from-every-integration-into-develop.md) | Aceita | Gera builds de pré-release descartáveis a cada integração na `develop`, versionados a partir da última tag alcançável. |
 | [0019](0019-expose-the-build-assigned-version-at-runtime.md) | Aceita | Exige que backends e aplicações de navegador exponham em runtime a versão atribuída no build, deixando o mecanismo a cargo de cada framework. |
+| [0020](0020-pin-every-build-and-deployment-input-to-an-exact-immutable-version.md) | Aceita | Fixa em versão exata e imutável tudo o que influencia build e deploy: pacotes NuGet e npm com lock files, SDKs e runtimes, imagens Docker por digest, actions por SHA e runners versionados, além de implantar artefatos pela versão exata. |
 
 ## Ferramentas e créditos
 

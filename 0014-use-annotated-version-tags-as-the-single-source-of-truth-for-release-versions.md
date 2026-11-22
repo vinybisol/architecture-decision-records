@@ -17,6 +17,8 @@ links:
   kind: relatesto
 - target: 18
   kind: relatesto
+- target: 20
+  kind: relatesto
 ---
 
 # 14. Use annotated version tags as the single source of truth for release versions

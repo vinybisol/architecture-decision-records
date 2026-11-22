@@ -17,6 +17,8 @@ links:
   kind: relatesto
 - target: 19
   kind: relatesto
+- target: 20
+  kind: relatesto
 ---
 
 # 17. Trigger releases from version tags and build each release artifact once
